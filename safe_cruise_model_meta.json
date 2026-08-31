@@ -1,8 +1,6 @@
 {
   "features": [
-    "Speed_kmh",
-    "Accel_X_Filtered",
-    "Accel_Y_Filtered",
+ 
     "Accel_Z_Filtered",
     "Accel_Magnitude",
     "Pitch",
