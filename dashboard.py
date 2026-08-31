@@ -13,9 +13,7 @@ defaults to trips that were held out of training, and labels any trip the model
 was trained on so a demo can never accidentally show memorised data.
 """
 
-import inspect
-import json
-import os
+
 
 import altair as alt
 import numpy as np
