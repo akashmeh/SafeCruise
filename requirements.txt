@@ -30,4 +30,4 @@ altair==6.2.2
 # importable and silently skips it otherwise. Left unpinned because no matplotlib
 # build is currently installed here, so there is no known-good cp314 wheel to
 # pin to -- let the resolver choose one.
-matplotlib>=3.10
+
