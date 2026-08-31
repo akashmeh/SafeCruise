@@ -9,4 +9,9 @@ secondaryBackgroundColor = "#12141a"
 textColor = "#e9ebee"
 font = "sans serif"
 
+[client]
+toolbarMode = "minimal"
+showErrorDetails = true
 
+[browser]
+gatherUsageStats = false
