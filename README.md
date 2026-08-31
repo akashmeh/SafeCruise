@@ -17,11 +17,11 @@
 
 <img src="https://img.shields.io/badge/STATUS-RESEARCH%20PROTOTYPE-FF5A1F?style=for-the-badge&labelColor=000000"/>
 
-<img src="https://img.shields.io/badge/ML-RANDOM%20FOREST-F2F2F2?style=for-the-badge&labelColor=2A2A2A"/>
+<img src="https://img.shields.io/badge/ML-XGBOOST-F2F2F2?style=for-the-badge&labelColor=2A2A2A"/>
 
 <img src="https://img.shields.io/badge/XAI-SHAP-FF5A1F?style=for-the-badge&labelColor=000000"/>
 
-<img src="https://img.shields.io/badge/ANDROID-KOTLIN-F2F2F2?style=for-the-badge&labelColor=2A2A2A"/>
+<img src="https://img.shields.io/badge/BACKEND-FASTAPI-F2F2F2?style=for-the-badge&labelColor=2A2A2A"/>
 
 </p>
 

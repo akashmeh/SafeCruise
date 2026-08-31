@@ -36,10 +36,16 @@ app = FastAPI(
     version="3.0.0",
     description="Temporal driver-risk engine (jerk + rolling-window features, SHAP)",
 )
+import logging
 
-model, _ = F.load_model()
-FEATURE_ORDER = F.model_feature_order(model)
-
+try:
+    model, _ = F.load_model()
+    FEATURE_ORDER = F.model_feature_order(model)
+    MODEL_LOADED = True
+except Exception as e:
+    logging.error(f"Failed to load model or explainer: {e}")
+    MODEL_LOADED = False
+    FEATURE_ORDER = F.FEATURES
 
 # --------------------------------------------------------------------------- #
 # Schemas
@@ -134,6 +140,7 @@ def row_payload(row: pd.Series, index: int) -> Dict:
 def home():
     return {
         "status": "Safe Cruise Backend is Online!",
+        "model_loaded": MODEL_LOADED,
         "version": app.version,
         "n_features": len(FEATURE_ORDER),
         "min_window_seconds": F.MIN_WINDOW_SECONDS,
@@ -166,6 +173,9 @@ def schema():
 @app.post("/predict")
 def predict_risk(window: TelemetryWindow):
     """Score the newest sample in the buffer, using the rest as its history."""
+    if not MODEL_LOADED:
+        raise HTTPException(status_code=503, detail="Model is currently unavailable. Ensure the model file is present.")
+    
     frame = window_to_frame(window)
     span = window_span(frame)
 
@@ -199,6 +209,9 @@ def predict_batch(window: TelemetryWindow):
     Rows in the leading warm-up period cannot have a full window, so they are
     reported in `skipped_indices` rather than scored with invented values.
     """
+    if not MODEL_LOADED:
+        raise HTTPException(status_code=503, detail="Model is currently unavailable. Ensure the model file is present.")
+    
     frame = window_to_frame(window)
     span = window_span(frame)
 
