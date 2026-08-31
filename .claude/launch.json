@@ -1,0 +1,28 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "safe-cruise-dashboard",
+      "runtimeExecutable": ".venv.nosync/bin/streamlit",
+      "runtimeArgs": [
+        "run",
+        "dashboard.py",
+        "--server.port",
+        "8501",
+        "--server.headless",
+        "true",
+        "--server.fileWatcherType",
+        "none",
+        "--browser.gatherUsageStats",
+        "false"
+      ],
+      "port": 8501
+    },
+    {
+      "name": "safe-cruise-api",
+      "runtimeExecutable": ".venv.nosync/bin/uvicorn",
+      "runtimeArgs": ["main:app", "--port", "8000"],
+      "port": 8000
+    }
+  ]
+}

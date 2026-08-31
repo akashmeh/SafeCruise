@@ -1,0 +1,859 @@
+{
+  "validation_strategy": "GroupShuffleSplit on Trip_ID (test_size=0.25); stability from StratifiedGroupKFold(5) on Trip_ID. No random row split is reported.",
+  "features": [
+    "Speed_kmh",
+    "Accel_X_Filtered",
+    "Accel_Y_Filtered",
+    "Accel_Z_Filtered",
+    "Accel_Magnitude",
+    "Pitch",
+    "Jerk_X",
+    "Jerk_Y",
+    "Jerk_Z",
+    "Jerk_Magnitude",
+    "Speed_kmh_std_5s",
+    "Speed_kmh_mean_5s",
+    "Accel_X_Filtered_std_5s",
+    "Accel_Y_Filtered_std_5s",
+    "Yaw_std_5s",
+    "Jerk_Magnitude_mean_5s",
+    "Jerk_Magnitude_max_5s",
+    "Accel_Magnitude_max_5s",
+    "Speed_kmh_std_15s",
+    "Speed_kmh_mean_15s",
+    "Accel_X_Filtered_std_15s",
+    "Accel_Y_Filtered_std_15s",
+    "Yaw_std_15s",
+    "Jerk_Magnitude_mean_15s",
+    "Jerk_Magnitude_max_15s",
+    "Accel_Magnitude_max_15s",
+    "Speed_kmh_std_60s",
+    "Speed_kmh_mean_60s",
+    "Accel_X_Filtered_std_60s",
+    "Accel_Y_Filtered_std_60s",
+    "Yaw_std_60s",
+    "Jerk_Magnitude_mean_60s",
+    "Jerk_Magnitude_max_60s",
+    "Accel_Magnitude_max_60s"
+  ],
+  "class_names": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "class_behaviours": [
+    "NORMAL",
+    "DROWSY",
+    "AGGRESSIVE"
+  ],
+  "n_rows_total": 294073,
+  "n_trips": 40,
+  "train_trips": [
+    "20151110175712-16km-D1-NORMAL1-SECONDARY",
+    "20151111123124-25km-D1-NORMAL-MOTORWAY",
+    "20151111132348-25km-D1-DROWSY-MOTORWAY",
+    "20151111134545-16km-D1-AGGRESSIVE-SECONDARY",
+    "20151111135612-13km-D1-DROWSY-SECONDARY",
+    "20151120131714-26km-D2-NORMAL-MOTORWAY",
+    "20151120135152-25km-D2-DROWSY-MOTORWAY",
+    "20151120160904-16km-D2-NORMAL1-SECONDARY",
+    "20151120163350-16km-D2-AGGRESSIVE-SECONDARY",
+    "20151120164606-16km-D2-DROWSY-SECONDARY",
+    "20151126113754-26km-D3-DROWSY-MOTORWAY",
+    "20151126124208-16km-D3-NORMAL1-SECONDARY",
+    "20151126125458-16km-D3-NORMAL2-SECONDARY",
+    "20151126130707-16km-D3-AGGRESSIVE-SECONDARY",
+    "20151126132013-17km-D3-DROWSY-SECONDARY",
+    "20151126134736-26km-D3-AGGRESSIVE-MOTORWAY",
+    "20151203171800-16km-D4-NORMAL1-SECONDARY",
+    "20151203173103-17km-D4-NORMAL2-SECONDARY",
+    "20151203174324-16km-D4-AGGRESSIVE-SECONDARY",
+    "20151204152848-25km-D4-NORMAL-MOTORWAY",
+    "20151204154908-25km-D4-AGGRESSIVE-MOTORWAY",
+    "20151204160823-25km-D4-DROWSY-MOTORWAY",
+    "20151209153137-25km-D5-AGGRESSIVE-MOTORWAY",
+    "20151211162829-16km-D5-NORMAL1-SECONDARY",
+    "20151211164124-17km-D5-NORMAL2-SECONDARY",
+    "20151217162714-26km-D6-NORMAL-MOTORWAY",
+    "20151217164730-25km-D6-DROWSY-MOTORWAY",
+    "20151221112434-17km-D6-NORMAL-SECONDARY",
+    "20151221113846-16km-D6-DROWSY-SECONDARY",
+    "20151221120051-26km-D6-AGGRESSIVE-MOTORWAY"
+  ],
+  "test_trips": [
+    "20151110180824-16km-D1-NORMAL2-SECONDARY",
+    "20151111125233-24km-D1-AGGRESSIVE-MOTORWAY",
+    "20151120133502-26km-D2-AGGRESSIVE-MOTORWAY",
+    "20151120162105-17km-D2-NORMAL2-SECONDARY",
+    "20151126110502-26km-D3-NORMAL-MOTORWAY",
+    "20151203175637-17km-D4-DROWSY-SECONDARY",
+    "20151209151242-25km-D5-NORMAL-MOTORWAY",
+    "20151211160213-25km-D5-DROWSY-MOTORWAY",
+    "20151211165606-12km-D5-AGGRESSIVE-SECONDARY",
+    "20151211170502-16km-D5-DROWSY-SECONDARY"
+  ],
+  "holdout": {
+    "accuracy": 0.5517470237683725,
+    "precision_macro": 0.5635017042314564,
+    "recall_macro": 0.5477029639967061,
+    "f1_macro": 0.5537293205192763,
+    "per_class": {
+      "Low": {
+        "precision": 0.5352159669983014,
+        "recall": 0.5933286257103467,
+        "f1-score": 0.562776085604478,
+        "support": 29739.0
+      },
+      "Medium": {
+        "precision": 0.5109963417258446,
+        "recall": 0.5042684221703122,
+        "f1-score": 0.5076100897819581,
+        "support": 23545.0
+      },
+      "High": {
+        "precision": 0.6442928039702234,
+        "recall": 0.5455118441094595,
+        "f1-score": 0.5908017861713928,
+        "support": 19039.0
+      },
+      "accuracy": 0.5517470237683725,
+      "macro avg": {
+        "precision": 0.5635017042314564,
+        "recall": 0.5477029639967061,
+        "f1-score": 0.5537293205192763,
+        "support": 72323.0
+      },
+      "weighted avg": {
+        "precision": 0.5560456176221475,
+        "recall": 0.5517470237683725,
+        "f1-score": 0.5521943611385717,
+        "support": 72323.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        17645,
+        7298,
+        4796
+      ],
+      [
+        10734,
+        11873,
+        938
+      ],
+      [
+        4589,
+        4064,
+        10386
+      ]
+    ]
+  },
+  "grouped_cv": {
+    "accuracy": 0.5528967297235721,
+    "precision_macro": 0.5648719113804163,
+    "recall_macro": 0.5485959902136502,
+    "f1_macro": 0.5544044018620696,
+    "per_class": {
+      "Low": {
+        "precision": 0.5200802933903814,
+        "recall": 0.6016246444583715,
+        "f1-score": 0.5578884625414448,
+        "support": 124458.0
+      },
+      "Medium": {
+        "precision": 0.5553845402130363,
+        "recall": 0.47990289212581805,
+        "f1-score": 0.5148920749246902,
+        "support": 94740.0
+      },
+      "High": {
+        "precision": 0.6191509005378314,
+        "recall": 0.5642604340567613,
+        "f1-score": 0.5904326681200738,
+        "support": 74875.0
+      },
+      "accuracy": 0.5528967297235721,
+      "macro avg": {
+        "precision": 0.5648719113804163,
+        "recall": 0.5485959902136502,
+        "f1-score": 0.5544044018620696,
+        "support": 294073.0
+      },
+      "weighted avg": {
+        "precision": 0.5566788116295385,
+        "recall": 0.5528967297235721,
+        "f1-score": 0.5523227344055347,
+        "support": 294073.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        74877,
+        29034,
+        20547
+      ],
+      [
+        43833,
+        45466,
+        5441
+      ],
+      [
+        25262,
+        7364,
+        42249
+      ]
+    ],
+    "fold_accuracies": [
+      0.4322246333433104,
+      0.5860411459334743,
+      0.5787274717481461,
+      0.5483818241255313,
+      0.6021644271514311
+    ],
+    "mean_fold_accuracy": 0.5495079004603787,
+    "std_fold_accuracy": 0.06118464507990448
+  },
+  "trip_level": {
+    "accuracy": 0.575,
+    "n_correct": 23,
+    "n_trips": 40,
+    "confusion_matrix": [
+      [
+        12,
+        3,
+        2
+      ],
+      [
+        7,
+        5,
+        0
+      ],
+      [
+        5,
+        0,
+        6
+      ]
+    ],
+    "per_trip": [
+      {
+        "trip": "20151110175712-16km-D1-NORMAL1-SECONDARY",
+        "true": 0,
+        "predicted": 0,
+        "vote_share": 0.6536427230847978,
+        "n_rows": 5861,
+        "mix": {
+          "Low": 0.6536427230847978,
+          "Medium": 0.22061081726667803,
+          "High": 0.12574645964852416
+        }
+      },
+      {
+        "trip": "20151110180824-16km-D1-NORMAL2-SECONDARY",
+        "true": 0,
+        "predicted": 1,
+        "vote_share": 0.522688791059939,
+        "n_rows": 5906,
+        "mix": {
+          "Low": 0.4747714188960379,
+          "Medium": 0.522688791059939,
+          "High": 0.0025397900440230275
+        }
+      },
+      {
+        "trip": "20151111123124-25km-D1-NORMAL-MOTORWAY",
+        "true": 0,
+        "predicted": 2,
+        "vote_share": 0.5288484848484849,
+        "n_rows": 8250,
+        "mix": {
+          "Low": 0.3406060606060606,
+          "Medium": 0.13054545454545455,
+          "High": 0.5288484848484849
+        }
+      },
+      {
+        "trip": "20151111125233-24km-D1-AGGRESSIVE-MOTORWAY",
+        "true": 2,
+        "predicted": 2,
+        "vote_share": 0.7861545076680522,
+        "n_rows": 6977,
+        "mix": {
+          "Low": 0.2095456499928336,
+          "Medium": 0.004299842339114232,
+          "High": 0.7861545076680522
+        }
+      },
+      {
+        "trip": "20151111132348-25km-D1-DROWSY-MOTORWAY",
+        "true": 1,
+        "predicted": 0,
+        "vote_share": 0.5754109284762328,
+        "n_rows": 9004,
+        "mix": {
+          "Low": 0.5754109284762328,
+          "Medium": 0.3247445579742337,
+          "High": 0.09984451354953354
+        }
+      },
+      {
+        "trip": "20151111134545-16km-D1-AGGRESSIVE-SECONDARY",
+        "true": 2,
+        "predicted": 2,
+        "vote_share": 0.9136420525657072,
+        "n_rows": 4794,
+        "mix": {
+          "Low": 0.08635794743429287,
+          "High": 0.9136420525657072
+        }
+      },
+      {
+        "trip": "20151111135612-13km-D1-DROWSY-SECONDARY",
+        "true": 1,
+        "predicted": 0,
+        "vote_share": 0.4959069366652305,
+        "n_rows": 4642,
+        "mix": {
+          "Low": 0.4959069366652305,
+          "Medium": 0.4177078845325291,
+          "High": 0.08638517880224042
+        }
+      },
+      {
+        "trip": "20151120131714-26km-D2-NORMAL-MOTORWAY",
+        "true": 0,
+        "predicted": 0,
+        "vote_share": 0.5012351223894004,
+        "n_rows": 8906,
+        "mix": {
+          "Low": 0.5012351223894004,
+          "Medium": 0.3599820345834269,
+          "High": 0.1387828430271727
+        }
+      },
+      {
+        "trip": "20151120133502-26km-D2-AGGRESSIVE-MOTORWAY",
+        "true": 2,
+        "predicted": 2,
+        "vote_share": 0.5673218673218673,
+        "n_rows": 8140,
+        "mix": {
+          "Low": 0.2687960687960688,
+          "Medium": 0.1638820638820639,
+          "High": 0.5673218673218673
+        }
+      },
+      {
+        "trip": "20151120135152-25km-D2-DROWSY-MOTORWAY",
+        "true": 1,
+        "predicted": 0,
+        "vote_share": 0.4306717937118299,
+        "n_rows": 8842,
+        "mix": {
+          "Low": 0.4306717937118299,
+          "Medium": 0.3241348111287039,
+          "High": 0.24519339515946617
+        }
+      },
+      {
+        "trip": "20151120160904-16km-D2-NORMAL1-SECONDARY",
+        "true": 0,
+        "predicted": 0,
+        "vote_share": 0.8815071888943976,
+        "n_rows": 6051,
+        "mix": {
+          "Low": 0.8815071888943976,
+          "Medium": 0.09386878201950091,
+          "High": 0.024624029086101472
+        }
+      },
+      {
+        "trip": "20151120162105-17km-D2-NORMAL2-SECONDARY",
+        "true": 0,
+        "predicted": 0,
+        "vote_share": 0.8419249338109329,
+        "n_rows": 6421,
+        "mix": {
+          "Low": 0.8419249338109329,
+          "Medium": 0.08596791776981778,
+          "High": 0.07210714841924934
+        }
+      },
+      {
+        "trip": "20151120163350-16km-D2-AGGRESSIVE-SECONDARY",
+        "true": 2,
+        "predicted": 0,
+        "vote_share": 0.41932655208698705,
+        "n_rows": 5702,
+        "mix": {
+          "Low": 0.41932655208698705,
+          "Medium": 0.24131883549631708,
+          "High": 0.3393546124166959
+        }
+      },
+      {
+        "trip": "20151120164606-16km-D2-DROWSY-SECONDARY",
+        "true": 1,
+        "predicted": 1,
+        "vote_share": 0.7301454606253135,
+        "n_rows": 5981,
+        "mix": {
+          "Low": 0.2559772613275372,
+          "Medium": 0.7301454606253135,
+          "High": 0.013877278047149307
+        }
+      },
+      {
+        "trip": "20151126110502-26km-D3-NORMAL-MOTORWAY",
+        "true": 0,
+        "predicted": 0,
+        "vote_share": 0.6757794322940903,
+        "n_rows": 8596,
+        "mix": {
+          "Low": 0.6757794322940903,
+          "Medium": 0.18578408562121917,
+          "High": 0.13843648208469056
+        }
+      },
+      {
+        "trip": "20151126113754-26km-D3-DROWSY-MOTORWAY",
+        "true": 1,
+        "predicted": 1,
+        "vote_share": 0.6744524031973425,
+        "n_rows": 9633,
+        "mix": {
+          "Low": 0.28734558289214157,
+          "Medium": 0.6744524031973425,
+          "High": 0.03820201391051593
+        }
+      },
+      {
+        "trip": "20151126124208-16km-D3-NORMAL1-SECONDARY",
+        "true": 0,
+        "predicted": 0,
+        "vote_share": 0.9451568051907925,
+        "n_rows": 6473,
+        "mix": {
+          "Low": 0.9451568051907925,
+          "Medium": 0.048663679901127764,
+          "High": 0.006179514908079716
+        }
+      },
+      {
+        "trip": "20151126125458-16km-D3-NORMAL2-SECONDARY",
+        "true": 0,
+        "predicted": 0,
+        "vote_share": 0.7902478017585931,
+        "n_rows": 6255,
+        "mix": {
+          "Low": 0.7902478017585931,
+          "Medium": 0.1707434052757794,
+          "High": 0.039008792965627495
+        }
+      },
+      {
+        "trip": "20151126130707-16km-D3-AGGRESSIVE-SECONDARY",
+        "true": 2,
+        "predicted": 0,
+        "vote_share": 0.730299667036626,
+        "n_rows": 6307,
+        "mix": {
+          "Low": 0.730299667036626,
+          "Medium": 0.16489614713810052,
+          "High": 0.10480418582527351
+        }
+      },
+      {
+        "trip": "20151126132013-17km-D3-DROWSY-SECONDARY",
+        "true": 1,
+        "predicted": 0,
+        "vote_share": 0.502844141069397,
+        "n_rows": 6153,
+        "mix": {
+          "Low": 0.502844141069397,
+          "Medium": 0.43442223305704536,
+          "High": 0.06273362587355762
+        }
+      },
+      {
+        "trip": "20151126134736-26km-D3-AGGRESSIVE-MOTORWAY",
+        "true": 2,
+        "predicted": 2,
+        "vote_share": 0.7461257402041074,
+        "n_rows": 7937,
+        "mix": {
+          "Low": 0.1911301499307043,
+          "Medium": 0.06274410986518836,
+          "High": 0.7461257402041074
+        }
+      },
+      {
+        "trip": "20151203171800-16km-D4-NORMAL1-SECONDARY",
+        "true": 0,
+        "predicted": 0,
+        "vote_share": 0.898924414321497,
+        "n_rows": 6787,
+        "mix": {
+          "Low": 0.898924414321497,
+          "Medium": 0.041550022101075584,
+          "High": 0.059525563577427436
+        }
+      },
+      {
+        "trip": "20151203173103-17km-D4-NORMAL2-SECONDARY",
+        "true": 0,
+        "predicted": 0,
+        "vote_share": 0.7918354627609847,
+        "n_rows": 6418,
+        "mix": {
+          "Low": 0.7918354627609847,
+          "Medium": 0.07993144281707697,
+          "High": 0.1282330944219383
+        }
+      },
+      {
+        "trip": "20151203174324-16km-D4-AGGRESSIVE-SECONDARY",
+        "true": 2,
+        "predicted": 0,
+        "vote_share": 0.7090323673953567,
+        "n_rows": 5901,
+        "mix": {
+          "Low": 0.7090323673953567,
+          "Medium": 0.18674800881206574,
+          "High": 0.10421962379257753
+        }
+      },
+      {
+        "trip": "20151203175637-17km-D4-DROWSY-SECONDARY",
+        "true": 1,
+        "predicted": 0,
+        "vote_share": 0.5324332712600869,
+        "n_rows": 6444,
+        "mix": {
+          "Low": 0.5324332712600869,
+          "Medium": 0.4031657355679702,
+          "High": 0.0644009931719429
+        }
+      },
+      {
+        "trip": "20151204152848-25km-D4-NORMAL-MOTORWAY",
+        "true": 0,
+        "predicted": 0,
+        "vote_share": 0.6580774084981068,
+        "n_rows": 9508,
+        "mix": {
+          "Low": 0.6580774084981068,
+          "Medium": 0.16123264619267985,
+          "High": 0.18068994530921328
+        }
+      },
+      {
+        "trip": "20151204154908-25km-D4-AGGRESSIVE-MOTORWAY",
+        "true": 2,
+        "predicted": 2,
+        "vote_share": 0.652208113271154,
+        "n_rows": 8899,
+        "mix": {
+          "Low": 0.318687492976739,
+          "Medium": 0.029104393752106977,
+          "High": 0.652208113271154
+        }
+      },
+      {
+        "trip": "20151204160823-25km-D4-DROWSY-MOTORWAY",
+        "true": 1,
+        "predicted": 0,
+        "vote_share": 0.6333299316256761,
+        "n_rows": 9799,
+        "mix": {
+          "Low": 0.6333299316256761,
+          "Medium": 0.3586080212266558,
+          "High": 0.008062047147668129
+        }
+      },
+      {
+        "trip": "20151209151242-25km-D5-NORMAL-MOTORWAY",
+        "true": 0,
+        "predicted": 2,
+        "vote_share": 0.4812840290381125,
+        "n_rows": 8816,
+        "mix": {
+          "Low": 0.3937159709618875,
+          "Medium": 0.125,
+          "High": 0.4812840290381125
+        }
+      },
+      {
+        "trip": "20151209153137-25km-D5-AGGRESSIVE-MOTORWAY",
+        "true": 2,
+        "predicted": 2,
+        "vote_share": 0.9966900569310208,
+        "n_rows": 7553,
+        "mix": {
+          "Low": 0.0033099430689792135,
+          "High": 0.9966900569310208
+        }
+      },
+      {
+        "trip": "20151211160213-25km-D5-DROWSY-MOTORWAY",
+        "true": 1,
+        "predicted": 0,
+        "vote_share": 0.5240723120837297,
+        "n_rows": 10510,
+        "mix": {
+          "Low": 0.5240723120837297,
+          "Medium": 0.4759276879162702
+        }
+      },
+      {
+        "trip": "20151211162829-16km-D5-NORMAL1-SECONDARY",
+        "true": 0,
+        "predicted": 0,
+        "vote_share": 0.8306364617044228,
+        "n_rows": 6489,
+        "mix": {
+          "Low": 0.8306364617044228,
+          "Medium": 0.11465557096625058,
+          "High": 0.054707967329326555
+        }
+      },
+      {
+        "trip": "20151211164124-17km-D5-NORMAL2-SECONDARY",
+        "true": 0,
+        "predicted": 0,
+        "vote_share": 0.9975186104218362,
+        "n_rows": 6448,
+        "mix": {
+          "Low": 0.9975186104218362,
+          "Medium": 0.0024813895781637717
+        }
+      },
+      {
+        "trip": "20151211165606-12km-D5-AGGRESSIVE-SECONDARY",
+        "true": 2,
+        "predicted": 0,
+        "vote_share": 0.4074451810300867,
+        "n_rows": 3922,
+        "mix": {
+          "Low": 0.4074451810300867,
+          "Medium": 0.21137174910759818,
+          "High": 0.38118306986231515
+        }
+      },
+      {
+        "trip": "20151211170502-16km-D5-DROWSY-SECONDARY",
+        "true": 1,
+        "predicted": 1,
+        "vote_share": 0.6243362160521924,
+        "n_rows": 6591,
+        "mix": {
+          "Low": 0.35578819602488243,
+          "Medium": 0.6243362160521924,
+          "High": 0.0198755879229252
+        }
+      },
+      {
+        "trip": "20151217162714-26km-D6-NORMAL-MOTORWAY",
+        "true": 0,
+        "predicted": 1,
+        "vote_share": 0.52475752935171,
+        "n_rows": 9795,
+        "mix": {
+          "Low": 0.019601837672281776,
+          "Medium": 0.52475752935171,
+          "High": 0.45564063297600815
+        }
+      },
+      {
+        "trip": "20151217164730-25km-D6-DROWSY-MOTORWAY",
+        "true": 1,
+        "predicted": 1,
+        "vote_share": 0.516626036079961,
+        "n_rows": 10255,
+        "mix": {
+          "Low": 0.43354461238420283,
+          "Medium": 0.516626036079961,
+          "High": 0.049829351535836175
+        }
+      },
+      {
+        "trip": "20151221112434-17km-D6-NORMAL-SECONDARY",
+        "true": 0,
+        "predicted": 1,
+        "vote_share": 0.9281893554426317,
+        "n_rows": 7478,
+        "mix": {
+          "Low": 0.057903182669162875,
+          "Medium": 0.9281893554426317,
+          "High": 0.013907461888205403
+        }
+      },
+      {
+        "trip": "20151221113846-16km-D6-DROWSY-SECONDARY",
+        "true": 1,
+        "predicted": 1,
+        "vote_share": 0.5334011036886436,
+        "n_rows": 6886,
+        "mix": {
+          "Low": 0.46659889631135637,
+          "Medium": 0.5334011036886436
+        }
+      },
+      {
+        "trip": "20151221120051-26km-D6-AGGRESSIVE-MOTORWAY",
+        "true": 2,
+        "predicted": 0,
+        "vote_share": 0.46219833009264555,
+        "n_rows": 8743,
+        "mix": {
+          "Low": 0.46219833009264555,
+          "Medium": 0.10248198558847077,
+          "High": 0.4353196843188837
+        }
+      }
+    ]
+  },
+  "holdout_strategy": "stratified_group",
+  "roll_windows": [
+    "5s",
+    "15s",
+    "60s"
+  ],
+  "feature_importances": [
+    {
+      "feature": "Speed_kmh_mean_60s",
+      "gain": 0.07144805788993835
+    },
+    {
+      "feature": "Jerk_Magnitude_mean_60s",
+      "gain": 0.07071752846240997
+    },
+    {
+      "feature": "Accel_Y_Filtered_std_60s",
+      "gain": 0.06868491321802139
+    },
+    {
+      "feature": "Accel_Z_Filtered",
+      "gain": 0.06316552311182022
+    },
+    {
+      "feature": "Accel_Y_Filtered_std_15s",
+      "gain": 0.054147761315107346
+    },
+    {
+      "feature": "Speed_kmh_std_5s",
+      "gain": 0.053157053887844086
+    },
+    {
+      "feature": "Speed_kmh_std_60s",
+      "gain": 0.04990800470113754
+    },
+    {
+      "feature": "Yaw_std_60s",
+      "gain": 0.04574442654848099
+    },
+    {
+      "feature": "Accel_X_Filtered_std_60s",
+      "gain": 0.04546703025698662
+    },
+    {
+      "feature": "Speed_kmh_mean_15s",
+      "gain": 0.041452858597040176
+    },
+    {
+      "feature": "Accel_Y_Filtered_std_5s",
+      "gain": 0.04035628214478493
+    },
+    {
+      "feature": "Yaw_std_15s",
+      "gain": 0.039194583892822266
+    },
+    {
+      "feature": "Jerk_Magnitude_mean_15s",
+      "gain": 0.039002981036901474
+    },
+    {
+      "feature": "Accel_Magnitude_max_60s",
+      "gain": 0.03883941471576691
+    },
+    {
+      "feature": "Speed_kmh_std_15s",
+      "gain": 0.03640993684530258
+    },
+    {
+      "feature": "Jerk_Magnitude_max_60s",
+      "gain": 0.03412431478500366
+    },
+    {
+      "feature": "Speed_kmh_mean_5s",
+      "gain": 0.02676764875650406
+    },
+    {
+      "feature": "Speed_kmh",
+      "gain": 0.022332029417157173
+    },
+    {
+      "feature": "Accel_Magnitude_max_15s",
+      "gain": 0.019144207239151
+    },
+    {
+      "feature": "Accel_Y_Filtered",
+      "gain": 0.019114099442958832
+    },
+    {
+      "feature": "Pitch",
+      "gain": 0.018983425572514534
+    },
+    {
+      "feature": "Jerk_Magnitude_mean_5s",
+      "gain": 0.017455140128731728
+    },
+    {
+      "feature": "Jerk_Magnitude_max_15s",
+      "gain": 0.016641821712255478
+    },
+    {
+      "feature": "Accel_X_Filtered_std_15s",
+      "gain": 0.01622186228632927
+    },
+    {
+      "feature": "Yaw_std_5s",
+      "gain": 0.01606409251689911
+    },
+    {
+      "feature": "Accel_Magnitude_max_5s",
+      "gain": 0.010258223861455917
+    },
+    {
+      "feature": "Accel_X_Filtered_std_5s",
+      "gain": 0.006735438480973244
+    },
+    {
+      "feature": "Jerk_Magnitude_max_5s",
+      "gain": 0.0064460355788469315
+    },
+    {
+      "feature": "Accel_Magnitude",
+      "gain": 0.0062223379500210285
+    },
+    {
+      "feature": "Jerk_Z",
+      "gain": 0.00506945513188839
+    },
+    {
+      "feature": "Jerk_Magnitude",
+      "gain": 0.0004300443106330931
+    },
+    {
+      "feature": "Accel_X_Filtered",
+      "gain": 0.0002290865231771022
+    },
+    {
+      "feature": "Jerk_Y",
+      "gain": 6.43371167825535e-05
+    },
+    {
+      "feature": "Jerk_X",
+      "gain": 0.0
+    }
+  ]
+}

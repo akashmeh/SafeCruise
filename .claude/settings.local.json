@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(awk '{print NF}')",
+      "Bash(PYTHONWARNINGS=ignore .venv/bin/python /tmp/claude-501/apptest_dashboard.py)",
+      "Bash(time PYTHONWARNINGS=ignore .venv/bin/python -c \"import altair; print\\('ALTAIR OK', altair.__version__\\)\")"
+    ]
+  }
+}
