@@ -238,7 +238,4 @@ def predict_batch(window: TelemetryWindow):
             "peak_high_risk_probability": float(scored["Proba_High"].max()),
             "peak_high_risk_timestamp": float(scored["Timestamp"].iloc[peak_idx]),
         },
-        "warning": coverage_warning(span),
-        "skipped_indices": [i for i in range(len(frame)) if i not in scored_positions],
-        "detailed_predictions": results,
-    }
+   
