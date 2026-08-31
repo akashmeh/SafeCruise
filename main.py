@@ -225,7 +225,7 @@ def predict_batch(window: TelemetryWindow):
     }
     peak_idx = int(np.argmax(scored["Proba_High"].to_numpy()))
 
-    return {
+   
         "trip_id": window.trip_id,
         "summary": {
             "samples_received": len(frame),
