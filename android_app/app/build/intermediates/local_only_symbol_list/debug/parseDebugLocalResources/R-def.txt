@@ -1,0 +1,6 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_navigation_car
+string app_name
+string mapbox_access_token
+style Theme.SafeCruise
