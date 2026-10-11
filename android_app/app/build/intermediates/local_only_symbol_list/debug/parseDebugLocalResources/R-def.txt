@@ -1,6 +1,10 @@
 R_DEF: Internal format may change without notice
 local
+drawable ic_avatar
+drawable ic_nav_arrow
 drawable ic_navigation_car
+drawable ic_safe_cruise_logo
 string app_name
 string mapbox_access_token
 style Theme.SafeCruise
+xml network_security_config

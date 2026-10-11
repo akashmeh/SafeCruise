@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:2:1-40:12
-INJECTED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:2:1-40:12
-INJECTED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:2:1-40:12
-INJECTED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:2:1-40:12
+ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:2:1-42:12
 MERGED from [com.mapbox.maps:android:11.2.0] /Users/akash/.gradle/caches/9.3.0/transforms/e2a2c99b75b00d3c73c55d9e922f9396/transformed/android-11.2.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.mapbox.extension:maps-compose:11.2.0] /Users/akash/.gradle/caches/9.3.0/transforms/92ff082af0a21f9ff6744dc4c123ffbd/transformed/maps-compose-11.2.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-location:21.1.0] /Users/akash/.gradle/caches/9.3.0/transforms/b8a419463d32c6543fe1cc2ee054ca64/transformed/play-services-location-21.1.0/AndroidManifest.xml:2:1-9:12
@@ -128,8 +128,8 @@ ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml
 	android:name
 		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:9:22-74
 application
-ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:11:5-38:19
-INJECTED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:11:5-38:19
+ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:11:5-40:19
+INJECTED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:11:5-40:19
 MERGED from [com.google.android.gms:play-services-location:21.1.0] /Users/akash/.gradle/caches/9.3.0/transforms/b8a419463d32c6543fe1cc2ee054ca64/transformed/play-services-location-21.1.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:21.1.0] /Users/akash/.gradle/caches/9.3.0/transforms/b8a419463d32c6543fe1cc2ee054ca64/transformed/play-services-location-21.1.0/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/akash/.gradle/caches/9.3.0/transforms/5ecfa755e718a9f7b26c30680b252c98/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
@@ -171,39 +171,43 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/akash/.gradle/caches
 	android:allowBackup
 		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:12:9-35
 	android:theme
-		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:16:9-48
+		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:18:9-48
+	android:networkSecurityConfig
+		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:17:9-69
+	android:usesCleartextTraffic
+		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:16:9-44
 meta-data#com.mapbox.token
-ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:19:9-21:134
+ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:21:9-23:134
 	android:value
-		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:21:13-131
+		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:23:13-131
 	android:name
-		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:20:13-44
+		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:22:13-44
 service#com.safecruise.app.service.TelemetryService
-ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:23:9-26:56
+ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:25:9-28:56
 	android:exported
-		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:25:13-37
+		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:27:13-37
 	android:foregroundServiceType
+		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:28:13-53
+	android:name
 		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:26:13-53
-	android:name
-		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:24:13-53
 activity#com.safecruise.app.MainActivity
-ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:28:9-37:20
+ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:30:9-39:20
 	android:exported
-		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:30:13-36
+		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:32:13-36
 	android:theme
-		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:31:13-52
+		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:33:13-52
 	android:name
-		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:29:13-41
+		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:31:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:32:13-36:29
+ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:34:13-38:29
 action#android.intent.action.MAIN
-ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:33:17-69
+ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:35:17-69
 	android:name
-		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:33:25-66
+		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:35:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:35:17-77
+ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:37:17-77
 	android:name
-		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:35:27-74
+		ADDED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml:37:27-74
 uses-sdk
 INJECTED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/akash/safe_cruise/android_app/app/src/main/AndroidManifest.xml

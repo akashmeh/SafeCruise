@@ -1,6 +1,22 @@
 [
     {
-        "merged": "com.safecruise.app-debug-64:/drawable_ic_navigation_car.xml.flat",
-        "source": "com.safecruise.app-main-66:/drawable/ic_navigation_car.xml"
+        "merged": "/Users/akash/.gradle/daemon/9.3.0/com.safecruise.app-debug-64:/xml_network_security_config.xml.flat",
+        "source": "/Users/akash/.gradle/daemon/9.3.0/com.safecruise.app-main-66:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "/Users/akash/.gradle/daemon/9.3.0/com.safecruise.app-debug-64:/drawable_ic_navigation_car.xml.flat",
+        "source": "/Users/akash/.gradle/daemon/9.3.0/com.safecruise.app-main-66:/drawable/ic_navigation_car.xml"
+    },
+    {
+        "merged": "com.safecruise.app-debug-64:/drawable_ic_avatar.xml.flat",
+        "source": "com.safecruise.app-main-66:/drawable/ic_avatar.xml"
+    },
+    {
+        "merged": "com.safecruise.app-debug-64:/drawable_ic_safe_cruise_logo.xml.flat",
+        "source": "com.safecruise.app-main-66:/drawable/ic_safe_cruise_logo.xml"
+    },
+    {
+        "merged": "com.safecruise.app-debug-64:/drawable_ic_nav_arrow.xml.flat",
+        "source": "com.safecruise.app-main-66:/drawable/ic_nav_arrow.xml"
     }
 ]

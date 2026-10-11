@@ -2,23 +2,42 @@ package com.safecruise.app.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val DarkOlivePanel = Color(0xFF1B221A)
-val DarkOliveBox = Color(0xFF111A11)
-val DarkOliveBorder = Color(0xFF2B3A29)
+// Backgrounds
+val DarkBackground = Color(0xFF0C0F14)
+val DarkHudCard = Color(0xFF131720)
+val DarkHudSubCard = Color(0xFF181C26)
+val DarkCardBorder = Color(0xFF222836)
+val DarkNavBackground = Color(0xFF0D1017)
 
-val BrightNeonGreen = Color(0xFF00FF22)
-val NeonLimePill = Color(0xFF00E632)
-val StatusPillBorder = Color(0xFF00B324)
+// Neon Greens
+val BrightNeonGreen = Color(0xFF00FF66)
+val EmeraldGreen = Color(0xFF00E676)
+val RouteGreen = Color(0xFF00E676)
+val GlowGreen = Color(0x4D00FF66)
 
-val WarningOrange = Color(0xFFFF9800)
-val HighRiskRed = Color(0xFFFF3333)
+// Alerts & Badges
+val SpeedPillGreen = Color(0xFF00FF66)
+val RecordingPillBg = Color(0xFF26190E)
+val RecordingPillBorder = Color(0xFF5A3614)
+val WarningOrange = Color(0xFFFFA726)
+val HighRiskOrange = Color(0xFFFF9100)
+val HighRiskRed = Color(0xFFD32F2F)
+val HighRiskRedDark = Color(0xFFB71C1C)
 
+// Typography & Neutrals
 val TextWhite = Color(0xFFFFFFFF)
-val TextMutedGrey = Color(0xFFA2B5A0)
-val TextBlack = Color(0xFF0A1209)
+val TextMutedGrey = Color(0xFF909DB0)
+val TextDarkGrey = Color(0xFF556070)
+val TextBlack = Color(0xFF070B08)
+val ImvTextMuted = Color(0xFFC0CAD8)
 
-val DarkBackground = Color(0xFF121216)
-val LimeGreen = Color(0xFF32CD32)
-val NeonYellow = Color(0xFFDFFF00)
-val DarkCharcoal = Color(0xFF1E1E24)
-val DarkPanelBorder = Color(0xFF2D2D35)
+// Legacy / Compatibility
+val DarkOlivePanel = Color(0xFF131720)
+val DarkOliveBox = Color(0xFF181C26)
+val DarkOliveBorder = Color(0xFF222836)
+val NeonLimePill = Color(0xFF00FF66)
+val StatusPillBorder = Color(0xFF00E676)
+val LimeGreen = Color(0xFF00E676)
+val NeonYellow = Color(0xFFFFD600)
+val DarkCharcoal = Color(0xFF131720)
+val DarkPanelBorder = Color(0xFF222836)

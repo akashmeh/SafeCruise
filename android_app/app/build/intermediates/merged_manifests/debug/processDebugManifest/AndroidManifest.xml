@@ -38,8 +38,10 @@
         android:extractNativeLibs="false"
         android:icon="@android:drawable/sym_def_app_icon"
         android:label="SafeCruise"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SafeCruise" >
+        android:theme="@style/Theme.SafeCruise"
+        android:usesCleartextTraffic="true" >
 
         <!-- Mapbox Access Token -->
         <meta-data
